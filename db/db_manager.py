@@ -11,11 +11,11 @@ class DBManager:
 
     def __init__(self, database_name):
         self.params = config()
-        self.params.update({'dbname': database_name})
+        self.params.update({'database': database_name})
 
         self.conn = psycopg2.connect(**self.params)
         self.conn.autocommit = True
-        
+
         self.cursor = self.conn.cursor()
 
     def get_companies_and_vacancies_count(self):

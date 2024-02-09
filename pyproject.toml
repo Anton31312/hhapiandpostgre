@@ -10,6 +10,7 @@ packages = [{include = "scrapping hh"}]
 python = "^3.10"
 requests = "^2.31.0"
 psycopg2 = "^2.9.9"
+psycopg2-binary = "^2.9.9"
 
 
 [build-system]
